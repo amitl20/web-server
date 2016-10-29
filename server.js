@@ -18,7 +18,7 @@ var middleWare = {
 app.use(middleWare.logger);
 
 app.get('/about',middleWare.requireAuthentication, function (req, res) {
-	res.send('About page');
+	res.send('About page!');
 }); //(rout - the page to navigate, function(requset, response) )
 
 app.use(express.static(__dirname + '/public'));
